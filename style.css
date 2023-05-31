@@ -1,0 +1,219 @@
+:root{
+   --color-body:#006d77;
+   --color-heading: #f1faee;
+   --color-base: #1d3557;
+   --color-base2: #8e9aaf;
+   --color-brand: #d1e57f;
+   --color-brand2: #cae55c;
+   --sidbar-width:240px; 
+   --font-base:"Poppins";
+}
+/* .progress-bar {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 10px;
+   background-color: #f0f0f0;
+   border-radius: 5px;
+   z-index: 9999;
+ }
+ 
+.progress {
+height: 100%;
+background-color: #42b983;
+border-radius: 5px;
+transition: width 0.3s ease;
+} */
+
+
+body{
+   background-color: var(--color-body);
+   color: var(--color-base);
+   font-family: var(--font-base), sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+   color: var(--color-heading);
+   font-weight: 700;
+}
+a{
+   text-decoration: none;
+   color: var(--color-heading);
+   transition: all 0.4s ease;
+}
+a:hover{
+   color: var(--color-brand);
+}
+img{
+   width: 100%;
+}
+img.img-thumbnail {
+   width: 150px;
+   height: 150px;
+   
+}
+.text-brand {
+   color: var(--color-brand);
+}
+.full-height {
+   min-height: 100vh;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding-top: 80px;
+   padding-bottom: 80px;
+   border-bottom: 2px solid rgba(255,255,255, 0.1);
+}
+/* NAVBAR */
+.navbar {
+   background-color: var(--color-base);
+}
+.navbar .nav-link {
+   font-weight: 900;
+   text-transform: uppercase;
+   color: #fff;
+}
+.navbar .nav-link:hover {
+   color: var(--color-brand);
+}
+
+.navbar .nav-link.active {
+   color: var(--color-brand);
+}
+@media(min-width: 992px){
+   .navbar {
+      min-height: 100vh;
+      width: var(--sidbar-width);
+      background: linear-gradient(rgba(4, 75, 84, 0.8), rgba(4, 75, 84, 0.8)), url(../images/sidebar-img.jpg);
+      background-size: cover;
+      background-position: center;
+   }
+   .navbar-brand img {
+      border: 8px solid var(--color-brand);
+   }
+   /* CONTENT WRAPPER */
+   #content-wrapper {
+      padding-left: var(--sidbar-width);
+  }
+}
+
+.actv{
+   transition: top 0.5s;
+   background-color: rgba(255,255,255, 0.1);
+   width:98%;
+   height:47px;
+   position: absolute;
+   left:0;
+   top:2.7%;
+   z-index: -1;
+   border-radius: 6px;
+   box-shadow: 0 5px 10px #fff;
+   display: none;
+}
+ul.nav-links li{
+   margin-top:15px;
+} 
+ul.nav-links li:hover ~ .actv{
+   display: block;
+   transition: ease-in 0.2s;
+}
+ul.nav-links li:nth-child(1):hover ~ .actv{
+   top:44%;
+}
+ul.nav-links li:nth-child(2):hover ~ .actv{
+   top:53.8%;
+}
+ul.nav-links li:nth-child(3):hover ~ .actv{
+   top:63.5%;
+}
+ul.nav-links li:nth-child(4):hover ~ .actv{
+   top:73%;
+}
+ul.nav-links li:nth-child(5):hover ~ .actv{
+   top:82.8%;
+}
+.btn {
+   padding: 12px 28px;
+   font-weight: 700;
+}
+
+.btn-brand {
+   background-color: var(--color-brand);
+   border-color: var(--color-brand);
+   color: var(--color-base);
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+   background-color: var(--color-brand2);
+   color: var(--color-base);
+   border-color: var(--color-brand2);
+}
+.link-custom {
+   font-weight: 700;
+   position: relative;
+}
+
+.link-custom::after {
+   content: "";
+   width: 0%;
+   height: 2px;
+   background-color: var(--color-brand);
+   position: absolute;
+   left: 0;
+   top: 110%;
+   transition: all 0.4s;
+}
+
+.link-custom:hover::after {
+   width: 100%;
+}
+.shadow-effect {
+   transition: all 0.5s;
+}
+
+.shadow-effect:hover {
+   box-shadow: -6px 6px 0 0 var(--color-brand);
+}
+
+.iconbox {
+   width: 60px;
+   height: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 32px;
+   background-color: var(--color-brand);
+   color: var(--color-base);
+}
+/* CARD */
+.card-custom .card-custom-image {
+   overflow: hidden;
+}
+
+.card-custom .card-custom-image img {
+   transition: all 0.4s ease;
+}
+
+.card-custom:hover .card-custom-image img {
+   transform: scale(1.1);
+}
+.social-icons a {
+   width: 40px;
+   height: 40px;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   background-color: var(--color-base);
+   border-radius: 100px;
+   font-size: 50px;
+}
+.bg-base {
+   background-color: var(--color-base);
+}
+.fa-linkedin, .fa-facebook, .fa-instagram, .fa-github{
+   font-size: 30px;
+   margin-left: 5px;
+}
+ 
