@@ -13,10 +13,7 @@
 
 </head>
 <body>
-   <!--  <div class="progress-bar">
-        <div class="progress"></div>
-    </div> -->
-
+   
    <!-- NAV BAR -->
    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container flex-lg-column">
@@ -44,7 +41,6 @@
                <li>
                    <a class="nav-link" href="#contact">Thoughts</a>
                </li>
-               <div class="actv"></div>
            </ul>
          </div>
       </div>
@@ -73,7 +69,7 @@
     <section id="longexam1" class="full-height px-lg-5">
       <div class="container">
 
-          <div class="row pb-4" data-aos="fade-up">
+          <div class="row pb-3" data-aos="fade-up">
               <div class="col-lg-8">
                   <h6 class="text-brand">Long Exam 1</h6>
                   <h1>Combinatorics</h1>
@@ -88,11 +84,10 @@
                         <i class="fa-solid fa-calculator"></i>
                       </div>
                       <h5 class="mt-4 mb-2">Basics of Counting</h5>
-                      <p style="color:white;">involves permutations, combinations, and principles for determining the number of arrangements or selections.</p>
-                      <a href="#" class="link-custom">Read More</a>
+                      <p style="color:white;">involves permutations, combinations, and principles to know the number of arrangements or selections.</p>
+                      <a href="#info_count" class="link-custom">Read More</a>
                   </div>
               </div>
-
               <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                   <div class="service p-4 bg-base rounded-4 shadow-effect">
                       <div class="iconbox rounded-4">
@@ -100,7 +95,7 @@
                       </div>
                       <h5 class="mt-4 mb-2">Pigeonhole Principle</h5>
                       <p style="color:white;">if there are more objects than available places to put them, then at least two objects must occupy the same place.</p>
-                      <a href="#" class="link-custom">Read More</a>
+                      <a href="#info_pigeon" class="link-custom">Read More</a>
                   </div>
               </div>
 
@@ -112,55 +107,164 @@
                       <h5 class="mt-4 mb-2">Combination
                         & Permutation</h5>
                       <p style="color:white;">involves the arrangement of objects in order or how it selects them</p>
-                      <a href="#" class="link-custom">Read More</a>
+                      <a href="#info_percom" class="link-custom">Read More</a>
                   </div>
               </div>
           </div>
       </div>
   </section>
+
   <!-- END OF LONG EXAM 1 -->
-  <section>
-    <h1>What is the Basics of Counting?</h1>
-    <!-- <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <section id="info_count" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="section-content text-center">
+            <h2 class="mb-4">Combinatorics</h2><hr>
+            
+            <p>
+              <i><b>How many?  </b></i> This is the question and very essence of the basics of counting. Specifically, Combinatorics is a foundational skill to learn before even attempting to solve complex topics.
+            </p>
+            
+            <figure style="position: relative; text-align: center;">
+              <img src="images/password.jpg" alt="Iphone Password" id="iphone" style="display: inline-block;">
+              <figcaption style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); color:#eef3db; font-size: small; text-align: center;">Dave's Iphone.</figcaption>
+            </figure>
+            <h6>How many ways can a password be formed on Dave's Iphone?</h6>
+            <p>
+              Permutations refer to the arrangement of objects in a specific order, taking into account all possible arrangements. The number of permutations can be calculated using formulas like factorial or using permutation formulas based on specific conditions.
+            </p>
+            <p>
+              Combinations, on the other hand, are the selections of objects without considering their order. The number of combinations can be determined using combinations formulas, often involving combinations with repetition or without repetition.
+            </p>
+            <hr>
+            <h3>Analysis</h3>
+            <p>
+              Understanding the concepts of permutations and combinations is crucial in various fields, such as probability theory, computer science, and cryptography. By grasping these counting techniques, you gain the ability to solve complex problems that involve arranging elements or selecting subsets.
+            </p>
+            <hr>
+            <h3 class="mt-5">Reflection</h3>
+            <p>
+              Studying the basics of counting has given me a deeper appreciation for the intricacies of combinatorial mathematics. I have learned to approach problems systematically and consider different scenarios to determine the appropriate counting technique. This knowledge has not only improved my problem-solving skills but has also helped me in real-life situations, such as organizing events, scheduling tasks, and optimizing resources.
+            </p>
+            <hr>
+            <div class="quiz mt-5">
+              <h4>Quiz</h4>
+              <p style="margin-left: 70px;">What is the formula for calculating permutations?</p>
+              <ul id="quiz1">
+                <li style="list-style-type: none; margin-left: -28px;"><a href="#" class="option">nCr</a></li>
+                <li style="list-style-type: none; margin-left: -28px;"><a href="#" class="option">nPr</a></li>
+                <li style="list-style-type: none; margin-left: -28px;"><a href="#" class="option">n!</a></li>
+              </ul>
+              <p class="feedback"></p>
+            </div>
+          </div>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="\BootStrap\images\emergency.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="\BootStrap\images\boardroom.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="\BootStrap\images\amogus.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div> -->
-        
+      </div>
+    </div>
   </section>
+  <script>
+    // Quiz functionality
+    const options = document.querySelectorAll("#info_count .option");
+    const feedback = document.querySelector("#info_count .feedback");
+
+    options.forEach(option => {
+    option.addEventListener("click", function (event) {
+        event.preventDefault();
+        options.forEach(option => option.classList.remove("selected"));
+        this.classList.add("selected");
+
+        if (this.textContent === "nPr") {
+        feedback.textContent = "Correct! nPr is the formula for calculating permutations.";
+        feedback.classList.add("correct");
+        } else {
+        feedback.textContent = "Incorrect. Please try again.";
+        feedback.classList.add("wrong");
+        }
+    });
+    });
+  </script>
+  <hr class="custom-divider">
+  <section id="info_pigeon" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="section-content">
+            <h2 class="mb-4">Pigeonhole Principle</h2>
+            <hr>
+            <p>
+              The Pigeonhole Principle is a fundamental concept in combinatorics that states: "If you distribute more objects into containers than there are containers, then at least one container must contain more than one object."
+            </p>
+            <p>
+              The principle is based on the simple observation that if you have more pigeons than pigeonholes, some pigeonholes must contain more than one pigeon. In combinatorial mathematics, this principle has a wide range of applications in various problem-solving scenarios.
+            </p>
+            <p>
+              The Pigeonhole Principle is often used to prove the existence of solutions or to establish bounds on certain parameters in combinatorial problems. It provides a powerful tool for counting arguments and helps in identifying patterns, repetitions, or constraints in a given problem.
+            </p>
+            <hr>
+            <h3>Analysis</h3>
+            <p>
+              Understanding the Pigeonhole Principle is crucial in combinatorics, probability theory, and other areas of mathematics. By applying this principle, you can solve problems that involve allocation, distribution, pigeon allocation, scheduling, and many other scenarios where the number of objects exceeds the available spaces.
+            </p>
+  
+            <h3 class="mt-5">Reflection</h3>
+            <p>
+              Studying the Pigeonhole Principle has broadened my problem-solving skills and provided me with a valuable tool for approaching combinatorial problems. It has taught me to consider the limitations imposed by the principle and identify situations where it can be effectively applied. This knowledge has not only enhanced my mathematical thinking but has also equipped me with the ability to analyze real-life scenarios involving allocation and distribution.
+            </p>
+  
+            <div class="quiz mt-5">
+              <h4>Quiz</h4>
+              <p>What is the formula for calculating permutations?</p>
+              <ul id="quiz1">
+                <li><a href="#" class="option">nCr</a></li>
+                <li><a href="#" class="option">nPr</a></li>
+                <li><a href="#" class="option">n!</a></li>
+              </ul>
+              <p class="feedback"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr class="custom-divider">
+  <section id="info_percom" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="section-content">
+            <h2 class="mb-4">Permutations and Combinations</h2>
+            <hr class="custom-divider">
+            <p>
+              Permutations and combinations are fundamental concepts in combinatorics. They involve the arrangement and selection of objects, respectively.
+            </p>
+            <p>
+              Permutations refer to the arrangement of objects in a specific order, considering all possible arrangements. The number of permutations can be calculated using formulas like factorial or permutation formulas based on specific conditions.
+            </p>
+            <p>
+              Combinations, on the other hand, are the selections of objects without considering their order. The number of combinations can be determined using combinations formulas, which often involve combinations with or without repetition.
+            </p>
+            <hr class="custom-divider">
+            <h3>Applications</h3>
+            <p>
+              Permutations and combinations find applications in various fields, such as probability theory, statistics, computer science, and mathematical modeling. They are used to solve problems related to arrangements, selections, counting possibilities, and more.
+            </p>
+            <h3 class="mt-5">Practice Problems</h3>
+            <p>
+              Here are a few practice problems to test your understanding of permutations and combinations:
+            </p>
+            <ol>
+              <li>How many different three-letter words can be formed using the letters A, B, C, and D without repetition?</li>
+              <li>In a group of 10 people, how many different combinations of 4 people can be selected to form a committee?</li>
+              <li>A lock has 4 dials, each with 10 digits (0-9). How many possible combinations are there for the lock?</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr class="custom-divider">
+  
   <!-- LONG EXAM 2 TOPICS -->
     <section id="longexam2" class="full-height px-lg-5">
       <div class="container">
@@ -192,7 +296,7 @@
                       </div>
                       <h5 class="mt-4 mb-2">Probability Theory</h5>
                       <p style="color:white;">
-                        Study of uncertainty and the likelihood of events occurring, enabling the quantification and prediction of outcomes.</p>
+                        Study of uncertainty or likelihood of events, for the quantification and prediction of outcomes.</p>
                       <a href="#" class="link-custom">Read More</a>
                   </div>
               </div>
@@ -204,7 +308,7 @@
                       </div>
                       <h5 class="mt-4 mb-2">Bayes Theorem</h5>
                       <p style="color:white;">
-                        Bayes' Theorem calculates the probability of an event based on prior knowledge and conditional probabilities.</p>
+                        Bayes' Theorem calculates the probability of an event based on prior knowledge.</p>
                       <a href="#" class="link-custom">Read More</a>
                   </div>
               </div>
@@ -244,7 +348,7 @@
                       </div>
                       <h5 class="mt-4 mb-2">Euler & Hamilton Paths</h5>
                       <p style="color:white;">
-                        Euler paths travel every edge of a graph, while Hamilton paths visit each vertex of a graph, both, exactly once.</p>
+                        Euler paths travel every edge of a graph, while Hamilton paths visit each vertex exactly     once.</p>
                       <a href="#" class="link-custom">Read More</a>
                   </div>
               </div>
@@ -256,7 +360,7 @@
                       </div>
                       <h5 class="mt-4 mb-2">Shortest Path Problems</h5>
                       <p style="color:white;">
-                        Shortest path problems aim to find the most efficient route or path between two points in a network or graph.</p>
+                        Shortest path problems aim to find the most efficient route between two points in a graph.</p>
                       <a href="#" class="link-custom">Read More</a>
                   </div>
               </div>
@@ -605,32 +709,24 @@
 <!-- //FOOTER -->
 
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/js/bootstrap.bundle.min.js"></script>
+
   <!-- //WORK -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.jshttps://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
    <script>
-      var typed= new Typed(".auto-type", {
-         strings: ["Coding.", "Sleeping.", "Eating."],
-         typeSpeed: 150,
-         backSpeed: 150,
-         loop: true
-      })
-      // Add event listener for the close button
-      document.querySelector('.closebtn').addEventListener('click', function() {
-      closeNav();
-      });
-/*             // Get the progress bar element
-        var progressBar = document.querySelector('.progress');
-
-        // Function to update the progress bar
-        function updateProgressBar(percentage) {
-        progressBar.style.width = percentage + '%';
-        }
-
-        // Example usage
-        updateProgressBar(50); // Sets the progress bar to 50%
- */
+    var typed= new Typed(".auto-type", {
+        strings: ["Coding.", "Sleeping.", "Eating."],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true
+    })
+    // Add event listener for the close button
+    document.querySelector('.closebtn').addEventListener('click', function() {
+    closeNav();
+    });
+    
    </script>
 </body>
 </html>
