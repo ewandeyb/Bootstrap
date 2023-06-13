@@ -10,7 +10,8 @@
    <style>
       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
     </style>
-
+    <link rel="stylesheet"
+    href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/tomorrow-night-blue.min.css">
 </head>
 <body>
    
@@ -57,7 +58,7 @@
                         <h1 class="display-4"><b>Hi! I'm Aaron Dave A. Siapuatco</b></h1>
                         <h2>I'm <span class="auto-type text-brand"></span></h2>
                         <p style="color:#eef3db;" class="lead mt-2 mb-4 data-aos="fade-up" data-aos-delay="300"">This is my E-Portfolio a requirement in CMSC 57.</p>
-                        <a href="#" class="btn btn-brand me-3">Explore</a>
+                        <a href="#longexam1" class="btn btn-brand me-3">Explore</a>
                         <a href="#" class="link-custom">(+63)9822927342</a>
                      </div>
                   </div>
@@ -114,50 +115,206 @@
       </div>
   </section>
 
-  <!-- END OF LONG EXAM 1 -->
-  <section id="info_count" class="py-5">
+  <!-- Basics of Counting -->
+  <section id="info_count" class="py-5 px-lg-5">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-8">
+      <div class="row gy-4 justify-content-between">
+        <div class="col-auto">
           <div class="section-content text-center">
             <h2 class="mb-4">Combinatorics</h2><hr>
             
             <p>
-              <i><b>How many?  </b></i> This is the question and very essence of the basics of counting. Specifically, Combinatorics is a foundational skill to learn before even attempting to solve complex topics.
-            </p>
+                <i><b>How many?  </b></i> This question lies at the core of counting and combinatorics, which are fundamental concepts in mathematics. Counting is not just about determining the number of possibilities, but it also involves understanding the principles and techniques used to solve complex problems that involve arranging elements or selecting subsets.
+              </p>
+              <h6>Example 1.1: iPhone Password</h6>
+              <figure style="position: relative; text-align: center;">
+                <img src="images/password.jpg" alt="iPhone Password" id="iphone" style="display: inline-block;">
+                <figcaption class="text-center" style="color:#eef3db; font-size: small; text-align: center;">Dave's iPhone.</figcaption>
+              </figure>
+              <h6>How many ways can a password be formed on Dave's iPhone?</h6>
+              <p>
+                In the case of Dave's iPhone password, we intuitively know that there are four slots to fill with numbers ranging from 0 to 9. Each slot can be filled independently, so we multiply the number of choices for each slot:
+              </p>
+              <h6>10 * 10 * 10 * 10</h6>
+              <h6>There are 10,000 ways to input a password on the iPhone.</h6>
+              <p>
+                This example demonstrates a straightforward application of counting, where the possibilities can be enumerated by considering the choices available for each element in a sequence. However, combinatorial problems can become much more intricate and require deeper analysis and techniques. In which we can use permutations and combinations that will be discussed as we move forward.   
+              </p>
             
-            <figure style="position: relative; text-align: center;">
-              <img src="images/password.jpg" alt="Iphone Password" id="iphone" style="display: inline-block;">
-              <figcaption style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); color:#eef3db; font-size: small; text-align: center;">Dave's Iphone.</figcaption>
-            </figure>
-            <h6>How many ways can a password be formed on Dave's Iphone?</h6>
-            <p>
-              Permutations refer to the arrangement of objects in a specific order, taking into account all possible arrangements. The number of permutations can be calculated using formulas like factorial or using permutation formulas based on specific conditions.
-            </p>
-            <p>
-              Combinations, on the other hand, are the selections of objects without considering their order. The number of combinations can be determined using combinations formulas, often involving combinations with repetition or without repetition.
-            </p>
+              <h6> Now suppose in a bit string of length 8 how many bit patterns are there?</h6>
+              <h6>Example 1.2: Bit String</h6>
+              </div>
+                <pre class="exclude-code">
+                  <code class="lanugage-python">
+def count_bit_patterns(length):
+  num_patterns = 2 ** length
+  return num_patterns
+
+# Example usage:
+length = 8
+result = count_bit_patterns(length)
+print(f"The number of bit patterns for a string of length {length} is: {result}")
+
+--------------------------------------------------------------------------------------------------------------
+Result:
+The number of bit patterns for a string of length 8 is: 256
+                  </code>
+                </pre>
+              <hr>
+              <div class="section-content text-center">
+              <h3>Analysis</h3>
+              <p>
+                In the code above it illustrates, how we could solve basic counting problems. Given that a bit contains 1 or 2. We know there are only two choices for each character space in an 8 character string. With that, we know it is 2^8.
+              </p>
+              <h6 class="style: text-center">_ _ _ _ _ _ _ _ </h6>
+              <p>
+                With each character holding an amount of 2. Illustratively, it is 2*2*2*2*2*2*2*2 resulting to 256. This the very crux of dealing with counting, we try to segregate and think logically on each outcome, and try to find how many ways it can affect the whole. Without breaking the problem down into its length, and possible values at each character, solving a problem like this would be difficult.
+              </p>
+              <hr>
+              <h3 class="mt-5">Reflection</h3>
+              <p>
+                By grasping the concepts of basic counting and how we arrive at these values. We gain the thought process to think logically on the outcomes, how it varies, and how <b>systematically</b> we think. This skill becomes valuable when faced with real-life situations that involve large amounts of data and its procural.
+              </p>
+              <p>
+                In Discrete Mathematics, this lesson is the foundation to understand much more complex topics. Once I grasped how neccessary this was, it became easier for me to understand the further topics. 
+              </p>
+              <p>
+                Accounting, inventory management, and organizing large amounts of data all need efficient ways to sort and organize data. Through this, it even can help in the business side of things. 
+              </p>
+              <p>
+                Overall, the study of counting has not only broadened my mathematical knowledge but has also equipped me with transferable skills that can be applied across disciplines, making me a more effective problem solver and critical thinker.
+              </p>
             <hr>
+            <div class="quiz mt-5 d-flex justify-content-center align-items-center">
+            <div class="text-center">
+                <h4>Quiz</h4>
+                <p class="text-center">What does the basics of counting instill?</p>
+                <div class="text-center">
+                <ul class="col-auto" id="quiz1">
+                    <li style="list-style-type: none; margin-left: -15px;"><a href="#" class="option">To enhance memory</a></li>
+                    <li style="list-style-type: none; margin-left: -15px;"><a href="#" class="option">To think systematically</a></li>
+                    <li style="list-style-type: none; margin-left: -15px;"><a href="#" class="option">To foster entreprenurial thinking</a></li>
+                </ul>
+                </div>
+                <p class="feedback text-center"></p>
+            </div>  
+          </div>
+          </div>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    // Quiz functionality
+    const options = document.querySelectorAll("#info_count .option");
+    const feedback = document.querySelector("#info_count .feedback");
+  
+    options.forEach(option => {
+      option.addEventListener("click", function(event) {
+        event.preventDefault();
+        options.forEach(option => option.classList.remove("selected"));
+        this.classList.add("selected");
+  
+        if (this.textContent === "To think systematically") {
+          feedback.textContent = "Correct! It teaches us how to think systematically.";
+          feedback.classList.add("correct");
+          feedback.classList.remove("wrong"); // Remove "wrong" class if previously added
+        } else {
+          feedback.textContent = "Incorrect. Please try again.";
+          feedback.classList.add("wrong");
+          feedback.classList.remove("correct"); // Remove "correct" class if previously added
+        }
+      });
+    });
+  </script>
+  <!-- Pigeonhole Principle -->
+  <hr class="custom-divider">
+  <section id="info_pigeon" class="py-5 px-lg-5" >
+    <div class="container text">
+      <div class="row justify-content-between">
+        <div class="col-auto">
+          <div class="section-content text-center">
+            <h2 class="mb-4">Pigeonhole Principle</h2>
+            <hr>
+            <p>
+              The Pigeonhole Principle is a fundamental concept in combinatorics that gives certainty into choices:<i> "If you distribute more objects into containers than there are containers, then at least one container must contain more than one object."</i>
+            </p>
+            <h6>Example 2.1: Pigeons in Pigeonholes</h6>
+            <figure style="position: relative; text-align: center;">
+              <img src="images/pigeon_box.png" alt="Pigeonholes" id="p_holes" style="display: inline-block;">
+              <figcaption class="text-center" style="color:#eef3db; font-size: small; text-align: center;">Pigeonholes</figcaption>
+            </figure>
+
+            <p>
+              The idea behind the principle is based on the obvious observation that some pigeonholes must hold more than one pigeon if there are more pigeons than pigeonholes. In the example we can identify four pigeons, and three pigeonholes, and also see that there is <b>one pigeonhole that holds more than one pigeon</b>. This technique can be used in a variety of problem-solving situations in combinatorial mathematics. 
+            </p>
+            <p>
+              In combinatorial problems, the Pigeonhole Principle is frequently used to demonstrate the existence of solutions or to set boundaries on specific parameters. It offers an effective tool for counting arguments and aids in finding trends, recurrences, or limitations in a particular topic.
+            </p>
+            <h6>Example 2.1: Soccer Tournament</h6>
+            <figure style="position: relative; text-align: center;">
+              <img src="images/toruna.jpg" alt="bracket" id="toruna" style="display: inline-block;">
+              <figcaption class="text-center" style="color:#eef3db; font-size: small; text-align: center;">Tournament</figcaption>
+            </figure>
+
+            <h6>Find the number of wins a tournament of 8 teams must have to decide a champion, given the champion has to win 7 games.</h6>
+
+            <p>Now in order for the champion to be declared, a team must have 7 wins. So, 7 wins for the whole tournament, is a possible answer, yet it isn't a guarantee. That is to say for values based on chance. However, to get rid of that chance, we try to think based on the worst-case scenario. Which is all 8 teams have 6 wins.</p>
+
+            <h6>If 8 teams have 6 wins which equals 56 wins then on the <i>57th win</i> there must be a winner.</h6>
+          </div>
+            <pre class="exclude-code">
+                  <code class="lanugage-python">
+def pigeonhole_principle(items, holes):
+  n = items
+  pigeonholes = holes
+
+  if pigeonholes < n:
+      return True  # At least one pigeonhole has more than one item
+  else:
+      return False  # Each pigeonhole contains at most one item
+
+# Example usage
+items = 8
+holes = 7
+
+result = pigeonhole_principle(items, holes)
+print(result)
+                
+
+--------------------------------------------------------------------------------------------------------------
+Result:
+True
+                  </code>
+                </pre>
+              <hr>
+              <div class="section-content text-center">
             <h3>Analysis</h3>
             <p>
-              Understanding the concepts of permutations and combinations is crucial in various fields, such as probability theory, computer science, and cryptography. By grasping these counting techniques, you gain the ability to solve complex problems that involve arranging elements or selecting subsets.
+              Understanding the Pigeonhole Principle is crucial in combinatorics, probability theory, and other areas of mathematics. By applying this principle, you are taught to think in the <b>worst - case scenario</b>, and find the definite outcome. In the worst-case scenario, you consider the most unfavorable or challenging conditions that could occur. This allows you to explore the limits and boundaries of a problem, providing insights into what is guaranteed or unavoidable. By examining the worst-case scenario, you can identify patterns, constraints, and limitations that help determine the possible outcomes and make informed decisions.
             </p>
-            <hr>
+            <hr>    
             <h3 class="mt-5">Reflection</h3>
             <p>
-              Studying the basics of counting has given me a deeper appreciation for the intricacies of combinatorial mathematics. I have learned to approach problems systematically and consider different scenarios to determine the appropriate counting technique. This knowledge has not only improved my problem-solving skills but has also helped me in real-life situations, such as organizing events, scheduling tasks, and optimizing resources.
+            The Pigeonhole Principle has taught me the importance of considering not just the best-case scenario, but also the worst-case scenario. In our lives, we naturally tend to expect and focus on positive outcomes. However, the Pigeonhole Principle reminds us of the need to have a mindset prepared to face challenging situations and bad days as well. By embracing this principle, we develop a balanced perspective that encompasses both the good and the bad.</p>
+            <p>
+            This principle extends beyond mathematics and finds relevance in various domains, including software development. One notable concept in software development is the <i><b>Big-O Notation</b></i>. It symbolizes the time complexity of an algorithm and provides developers with insights into how to optimize their code. By analyzing the worst-case scenario, developers can understand the performance implications of their code and strive to improve efficiency, even when faced with challenging inputs.
             </p>
             <hr>
-            <div class="quiz mt-5">
-              <h4>Quiz</h4>
-              <p style="margin-left: 70px;">What is the formula for calculating permutations?</p>
-              <ul id="quiz1">
-                <li style="list-style-type: none; margin-left: -28px;"><a href="#" class="option">nCr</a></li>
-                <li style="list-style-type: none; margin-left: -28px;"><a href="#" class="option">nPr</a></li>
-                <li style="list-style-type: none; margin-left: -28px;"><a href="#" class="option">n!</a></li>
-              </ul>
-              <p class="feedback"></p>
-            </div>
+            <div class="quiz mt-5 d-flex justify-content-center align-items-center">
+              <div class="text-center">
+                  <h4>Quiz</h4>
+                  <p class="text-center">What is the Pigeonhole Principle's thought process?</p>
+                  <div class="text-center">
+                  <ul class="col-auto" id="quiz1">
+                      <li style="list-style-type: none; margin-left: -15px;"><a href="#" class="option">To think in the worst case scenario</a></li>
+                      <li style="list-style-type: none; margin-left: -15px;"><a href="#" class="option">To think in the best case scenario</a></li>
+                      <li style="list-style-type: none; margin-left: -15px;"><a href="#" class="option">To think of all possibilities</a></li>
+                  </ul>
+                  </div>
+                  <p class="feedback text-center"></p>
+              </div>  
+          </div>
           </div>
         </div>
       </div>
@@ -165,106 +322,146 @@
   </section>
   <script>
     // Quiz functionality
-    const options = document.querySelectorAll("#info_count .option");
-    const feedback = document.querySelector("#info_count .feedback");
-
-    options.forEach(option => {
-    option.addEventListener("click", function (event) {
+    const options1 = document.querySelectorAll("#info_pigeon .option");
+    const feedback1 = document.querySelector("#info_pigeon .feedback");
+  
+    options1.forEach(option => {
+      option.addEventListener("click", function(event) {
         event.preventDefault();
-        options.forEach(option => option.classList.remove("selected"));
+        options1.forEach(option => option.classList.remove("selected"));
         this.classList.add("selected");
-
-        if (this.textContent === "nPr") {
-        feedback.textContent = "Correct! nPr is the formula for calculating permutations.";
-        feedback.classList.add("correct");
+  
+        if (this.textContent === "To think in the worst case scenario") {
+          feedback1.textContent = "Correct! It teaches us how to think in the worst case scenario.";
+          feedback1.classList.add("correct");
+          feedback1.classList.remove("wrong"); // Remove "wrong" class if previously added
         } else {
-        feedback.textContent = "Incorrect. Please try again.";
-        feedback.classList.add("wrong");
+          feedback1.textContent = "Incorrect. Please try again.";
+          feedback1.classList.add("wrong");
+          feedback1.classList.remove("correct"); // Remove "correct" class if previously added
         }
-    });
+      });
     });
   </script>
-  <hr class="custom-divider">
-  <section id="info_pigeon" class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8">
-          <div class="section-content">
-            <h2 class="mb-4">Pigeonhole Principle</h2>
-            <hr>
-            <p>
-              The Pigeonhole Principle is a fundamental concept in combinatorics that states: "If you distribute more objects into containers than there are containers, then at least one container must contain more than one object."
-            </p>
-            <p>
-              The principle is based on the simple observation that if you have more pigeons than pigeonholes, some pigeonholes must contain more than one pigeon. In combinatorial mathematics, this principle has a wide range of applications in various problem-solving scenarios.
-            </p>
-            <p>
-              The Pigeonhole Principle is often used to prove the existence of solutions or to establish bounds on certain parameters in combinatorial problems. It provides a powerful tool for counting arguments and helps in identifying patterns, repetitions, or constraints in a given problem.
-            </p>
-            <hr>
-            <h3>Analysis</h3>
-            <p>
-              Understanding the Pigeonhole Principle is crucial in combinatorics, probability theory, and other areas of mathematics. By applying this principle, you can solve problems that involve allocation, distribution, pigeon allocation, scheduling, and many other scenarios where the number of objects exceeds the available spaces.
-            </p>
   
-            <h3 class="mt-5">Reflection</h3>
-            <p>
-              Studying the Pigeonhole Principle has broadened my problem-solving skills and provided me with a valuable tool for approaching combinatorial problems. It has taught me to consider the limitations imposed by the principle and identify situations where it can be effectively applied. This knowledge has not only enhanced my mathematical thinking but has also equipped me with the ability to analyze real-life scenarios involving allocation and distribution.
-            </p>
-  
-            <div class="quiz mt-5">
-              <h4>Quiz</h4>
-              <p>What is the formula for calculating permutations?</p>
-              <ul id="quiz1">
-                <li><a href="#" class="option">nCr</a></li>
-                <li><a href="#" class="option">nPr</a></li>
-                <li><a href="#" class="option">n!</a></li>
-              </ul>
-              <p class="feedback"></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- Permutations and Combinations-->
   <hr class="custom-divider">
-  <section id="info_percom" class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8">
-          <div class="section-content">
+  <section id="info_percom" class="py-5 px-lg-5" >
+    <div class="container text">
+      <div class="row justify-content-between">
+        <div class="col-auto">
+          <div class="section-content text-center">
             <h2 class="mb-4">Permutations and Combinations</h2>
-            <hr class="custom-divider">
+            <hr>
             <p>
-              Permutations and combinations are fundamental concepts in combinatorics. They involve the arrangement and selection of objects, respectively.
+              Permutations and combinations are fundamental concepts in combinatorics. They involve the <i>arrangement and selection of objects , respectively.</i>
             </p>
+            <h6>P(n, r) = n! / (n - r)!</h6>
             <p>
               Permutations refer to the arrangement of objects in a specific order, considering all possible arrangements. The number of permutations can be calculated using formulas like factorial or permutation formulas based on specific conditions.
             </p>
+            <h6>C(n, r) = n! / (r! * (n - r)!)</h6>
             <p>
               Combinations, on the other hand, are the selections of objects without considering their order. The number of combinations can be determined using combinations formulas, which often involve combinations with or without repetition.
             </p>
-            <hr class="custom-divider">
-            <h3>Applications</h3>
+            <h6>Example 3.1: Find the Probability</h6>
+            <figure style="position: relative; text-align: center;">
+              <img src="images/dice.jpg" alt="Dice and Cards" id="dice" style="display: inline-block;">
+              <figcaption class="text-center" style="color:#eef3db; font-size: small; text-align: center;">Dice and Cards</figcaption>
+            </figure>
+            <h6>In a standard deck of playing cards, how many different ways can you arrange a set of 5 cards in a specific order?</h6>
+
+            <p>Now notice the word <i>order</i> this means we are talking about permutations. Therefore we use the permutation formula.</p>
+            <h6> Given: n=52 cards, r=6 cards </h6>   
+            <h6>P(52, 5) = 52! / (52 - 5)!</h6>
+              <h6>= 52! / 47!</h6>
+              <h6>= 52 * 51 * 50 * 49 * 48= 311,875,200</h6>    
+              <h6>There are 311,875,200 different ways to arrange a set of 5 cards in a specific order from a standard deck.</h6>     
+           
             <p>
-              Permutations and combinations find applications in various fields, such as probability theory, statistics, computer science, and mathematical modeling. They are used to solve problems related to arrangements, selections, counting possibilities, and more.
+              Because of this, we now know the number of ways for 5 cards in a specific order. However, what if order didn't matter how would this affect the outcome? 
             </p>
-            <h3 class="mt-5">Practice Problems</h3>
+            <h6>In a standard deck of playing cards, how many different ways can you arrange a set of 5 cards in any order?</h6>
+
+            <p>Now since order doesn't matter this means we are talking about combinations. Therefore we use the combination formula.</p>
+            <h6> Given: n=52 cards, r=5 cards </h6>   
+            <h6>C(52, 5) = 52! / 5!(52 - 5)!</h6>
+              <h6>= 52! / 5!47!</h6>
+              <h6>= 52 * 51 * 50 * 49 * 48 / (5 * 4 * 3 * 2 * 1)= 2,598,960 </h6>    
+              <h6>There are 2,598,960  different ways to arrange a set of 5 cards in a specific order from a standard deck.</h6> 
+
             <p>
-              Here are a few practice problems to test your understanding of permutations and combinations:
+              Now, this problem shows a lesser amount of ways, primarily because there are less distinct patterns to be aware of. Permutations and Combinations go hand in hand, identifying where order is needed is crucial to know which concept to apply.
             </p>
-            <ol>
-              <li>How many different three-letter words can be formed using the letters A, B, C, and D without repetition?</li>
-              <li>In a group of 10 people, how many different combinations of 4 people can be selected to form a committee?</li>
-              <li>A lock has 4 dials, each with 10 digits (0-9). How many possible combinations are there for the lock?</li>
-            </ol>
+
+            <p>Now, let's take a break from the solving and understand the importance of permutations and combinations.</p>
+            <h6>Example 3.2: Password Cracker</h6>
+            <figure style="position: relative; text-align: center;">
+              <img src="images/brutepass.jpg" alt="pass_cracker" id="pass_cracker" style="display: inline-block;">
+              <figcaption class="text-center" style="color:#eef3db; font-size: small; text-align: center;">Passcode Cracker</figcaption>
+            </figure>
+              <p>By leveraging permutations, password brute force crackers systematically explore the vast space of possible password combinations. They generate permutations in a methodical manner, covering all possible variations within the defined character set and password length. Evidently, a longer password is harder to crack as well and vice versa.</p>
+              <div class="section-content text-center"><hr>
+            <h3>Analysis</h3>
+            <p>
+              Numerous real-world fields, including probability, statistics, genetics, encryption, and project planning, use combinations and permutations. They give us the ability to compute probabilities, examine intricate systems, improve results, and come at wise judgments. Understanding combinations and permutations is crucial for solving problems, anticipating outcomes, and exploring the possibilities in a particular situation, whether it be in science, business, or everyday situations.
+            </p>
+            <hr>    
+            <h3 class="mt-5">Reflection</h3>
+            <p>
+            Now that we have a good understanding of the Basics of Counting this is where we supplement our learning with Permutations and Combinations to solve more complex problems. Usually these are problems with constraints, such as having a certain amount of people to take from a group. Alternatively, it could be finding the number of ways to arrange 10 people with no female and male adjacent to each other.
+            </p>
+            <p>
+              In Computer Science, specifically, Cryptographic keys, are a fundamental component of secure communication and data protection. The generation of strong and unique keys is essential to ensure the confidentiality and integrity of sensitive information. Permutations and combinations play a crucial role in this process. Without a good understanding of this, many networks would be susceptible and vulnerable to cyber attacks.
+              </p>
+              <p>
+              On the other hand, a good understanding of these concepts can also benefit the other side of the network, the grey-hat hacker. Furthermore, when an attacker systematically tries different combinations of keys to decrypt an encrypted message. The understanding of permutations and combinations helps estimate the time and computational resources required to crack a cryptographic key by enumerating all possible combinations.
+            </p>
+            <hr>
+            <div class="quiz mt-5 d-flex justify-content-center align-items-center">
+              <div class="text-center">
+                  <h4>Quiz</h4>
+                  <p class="text-center">How many different committees can be formed from a group of 8 people, if the committee must consist of 3 members?</p>
+                  <div class="text-center">
+                  <ul class="col-auto" id="quiz1">
+                      <li style="list-style-type: none; margin-left: -15px;"><a href="#" class="option">336</a></li>
+                      <li style="list-style-type: none; margin-left: -15px;"><a href="#" class="option">56</a></li>
+                      <li style="list-style-type: none; margin-left: -15px;"><a href="#" class="option">24</a></li>
+                  </ul>
+                  </div>
+                  <p class="feedback text-center"></p>
+              </div>  
+          </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <hr class="custom-divider">
+  <script>
+    // Quiz functionality
+    const options2 = document.querySelectorAll("#info_percom .option");
+    const feedback2 = document.querySelector("#info_percom .feedback");
   
+    options2.forEach(option => {
+      option.addEventListener("click", function(event) {
+        event.preventDefault();
+        options2.forEach(option => option.classList.remove("selected"));
+        this.classList.add("selected");
+  
+        if (this.textContent === '56') {
+          feedback2.textContent = "Correct! Using combinations it results into 56.";
+          feedback2.classList.add("correct");
+          feedback2.classList.remove("wrong"); // Remove "wrong" class if previously added
+        } else {
+          feedback2.textContent = "Incorrect. Please try again.";
+          feedback2.classList.add("wrong");
+          feedback2.classList.remove("correct"); // Remove "correct" class if previously added
+        }
+      });
+    });
+  </script>
+  <!-- END OF LONG EXAM 1 TOPICS -->
+  <hr class="custom-divider">
   <!-- LONG EXAM 2 TOPICS -->
     <section id="longexam2" class="full-height px-lg-5">
       <div class="container">
@@ -283,9 +480,9 @@
                       <div class="iconbox rounded-4">
                         <i class="fa-solid fa-calculator"></i>
                       </div>
-                      <h5 class="mt-4 mb-2">Algebraic Structures</h5>
-                      <p style="color:white;">Mathematical systems with defined operations and properties, such as groups, rings, and fields..</p>
-                      <a href="#" class="link-custom">Read More</a>
+                      <h5 class="mt-4 mb-2">Finite Probability</h5>
+                      <p style="color:white;">refers to the probability of an event occurring in a finite sample space</p>
+                      <a href="#info_finite" class="link-custom">Read More</a>
                   </div>
               </div>
 
@@ -296,8 +493,8 @@
                       </div>
                       <h5 class="mt-4 mb-2">Probability Theory</h5>
                       <p style="color:white;">
-                        Study of uncertainty or likelihood of events, for the quantification and prediction of outcomes.</p>
-                      <a href="#" class="link-custom">Read More</a>
+                        Study of likelihood of events, for the quantification and prediction of outcomes.</p>
+                      <a href="#info_prob" class="link-custom">Read More</a>
                   </div>
               </div>
 
@@ -309,13 +506,335 @@
                       <h5 class="mt-4 mb-2">Bayes Theorem</h5>
                       <p style="color:white;">
                         Bayes' Theorem calculates the probability of an event based on prior knowledge.</p>
-                      <a href="#" class="link-custom">Read More</a>
+                      <a href="#info_bayes" class="link-custom">Read More</a>
                   </div>
               </div>
           </div>
       </div>
       </section>
+
+  <!-- Finite Probability -->
+  <section id="info_finite" class="py-5 px-lg-5" >
+    <div class="container text">
+      <div class="row justify-content-between">
+        <div class="col-auto">
+          <div class="section-content text-center">
+            <h2 class="mb-4">Finite Probability</h2>
+            <hr>
+            <p>
+              In computer science, finite probability plays an important role in the
+              study of the complexity of algorithms. The concept of finite probability allows us to analyze the likelihood of certain outcomes or events within the context of algorithmic operations.
+
+              When evaluating algorithmic complexity, we often consider the probability of encountering specific inputs or scenarios. This helps us understand the expected behavior, performance, and efficiency of algorithms in real-world situations.
+            </p>
+            <h6>Example 4.1: Dave's Phone Throwback</h6>
+            <figure style="position: relative; text-align: center;">
+              <img src="images/password2.jpg" alt="password2" id="password2" style="display: inline-block;">
+              <figcaption class="text-center" style="color:#eef3db; font-size: small; text-align: center;">Dave's Iphone</figcaption>
+            </figure>
+            <h6> Dave has just upgraded his iOS, and now the password requirements are for 6 digits. What is the probability of Dave guessing the password on his 7th try?</h6>
+
+            <p>Using the basics of counting, we know all combinations total to 10^6, our sample size. With guessing on his 7th try we now have two variables.</p>
+            <h6>p(E) = |E| / |S|</h6>
+            <h6>E=7, S=10^6</h6>
+            <h6>0.0007% </h6>
+            <p>Alternatively, the probability he doesn't get it on the 7th try is its complement or 1 - P(E) = P'(E)</p>
+            <h6>P'(E)=0.993%</h6>
+            <p>
+              The idea behind the finite probability is to divide the <i>event</i> by the <i>sample space</i>. Although this was a simple concept, the essence of finite probability is to find the number of outcomes <b>E</b> divided by the total number of outcomes <b>S.</b> 
+            </p>   
+            <h6>The code below shows the gist of finite probability.</h6>
+          </div>
+            <pre class="exclude-code">
+                  <code class="lanugage-python">
+def calculate_finite_probability(events, sample_space):
+  probability = events / sample_space
+  return probability
+
+# Example usage
+events = 3
+sample_space = 10
+
+result = calculate_finite_probability(events, sample_space)
+print(f"The finite probability is: {result}")
+                
+                
+
+--------------------------------------------------------------------------------------------------------------
+Result:
+The finite probability is 0.3.
+                  </code>
+                </pre>
+              <hr>
+              <div class="section-content text-center">
+            <h3>Analysis</h3>
+            <p>
+              Asides finding probabilities to passwords or card decks, finite probability is used to assess the average-case complexity. By assigning probabilities to different input distributions, we can estimate the expected running time or resource consumption of the algorithm over a large number of inputs. This information aids in understanding the algorithm's behavior and its performance characteristics in practical scenarios.
+
+              Moreover, in the design and analysis of data structures, finite probability comes into play when considering the likelihood of various operations or events occurring. This includes scenarios such as collision probabilities in hash tables, cache hit rates, or the expected number of comparisons in sorting algorithms. By incorporating finite probabilities into these analyses, we gain insights into the efficiency and effectiveness of different data structures and algorithms under specific conditions.
+            </p>
+            <hr>    
+            <h3 class="mt-5">Reflection</h3>
+            <p>
+              Finite probability isn't only used to calculate problems given in school, but also it is very evident in everyday life. Even waking up in the morning and going about our daily routines involves probabilities. For example, there is a probability of catching the bus on time, a probability of encountering traffic on the way to work, or a probability of finding a seat on a crowded train.
+              </p>
+              <p>
+              Understanding finite probability helps us make informed decisions and assess risks in various situations. It allows us to analyze the likelihood of different outcomes and make predictions based on available information. Whether it's planning a trip, making investment decisions, or assessing the chances of success in a project, considering finite probability allows us to weigh the potential outcomes and choose the most favorable course of action.</p>
+              <p>
+              Moreover, finite probability is crucial in fields such as insurance, finance, and risk management. Insurance companies calculate the probability of certain events occurring, such as accidents or property damage, to determine premiums and coverage. Financial institutions use probability models to assess investment risks and make decisions based on expected returns. Risk management strategies in businesses are also based on evaluating probabilities to minimize potential losses.
+            </p>
+            <hr>
+            <div class="quiz mt-5 d-flex justify-content-center align-items-center">
+              <div class="text-center">
+                  <h4>Quiz</h4>
+                  <p class="text-center">What are the two main elements in finite probability?</p>
+                  <div class="text-center">
+                  <ul class="col-auto" id="quiz1">
+                      <li style="list-style-type: none; margin-left: -15px;"><a href="#" class="option">S number of events & E number of sample</a></li>
+                      <li style="list-style-type: none; margin-left: -15px;"><a href="#" class="option">E number of experiment & S number of sample</a></li>
+                      <li style="list-style-type: none; margin-left: -15px;"><a href="#" class="option">S number of sample & E number of events</a></li>
+                  </ul>
+                  </div>
+                  <p class="feedback text-center"></p>
+              </div>  
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    // Quiz functionality
+    const options3 = document.querySelectorAll("#info_finite .option");
+    const feedback3 = document.querySelector("#info_finite .feedback");
+  
+    options3.forEach(option => {
+      option.addEventListener("click", function(event) {
+        event.preventDefault();
+        options3.forEach(option => option.classList.remove("selected"));
+        this.classList.add("selected");
+  
+        if (this.textContent === "S number of sample & E number of events") {
+          feedback3.textContent = "Correct! S is for the sample, and E is for events.";
+          feedback3.classList.add("correct");
+          feedback3.classList.remove("wrong"); // Remove "wrong" class if previously added
+        } else {
+          feedback3.textContent = "Incorrect. Please try again.";
+          feedback3.classList.add("wrong");
+          feedback3.classList.remove("correct"); // Remove "correct" class if previously added
+        }
+      });
+    });
+  </script>
+
+  <!-- Probability Theory -->
+  <hr class="custom-divider">
+  <section id="info_prob">
+    <div class="container text">
+      <div class="row justify-content-between">
+        <div class="col-auto">
+          <div class="section-content text-center">
+            <h2 class="mb-4">Probability Theory</h2>
+            <hr>
+            <p>
+              Similar to the previous topic of finite probability, probability theory delves deeper into the <i>relationship</i> between events and provides a framework for analyzing and making predictions based on that relationship. Probability theory allows us to quantify uncertainty and understand the likelihood of different outcomes occurring.
+            </p>
+            <p>
+            Probability theory goes beyond simple calculations of probabilities and explores concepts such as independence, conditional probability, and random variables. These concepts enable us to model and analyze complex systems, make informed decisions under uncertainty, and assess the impact of various factors on the outcomes of interest.
+            </p>
+            <h6>Example 5.1: Software Bug</h6>
+            <figure style="position: relative; text-align: center;">
+              <img src="images/bug.jpg" alt="bug" id="bug" style="display: inline-block;">
+              <figcaption class="text-center" style="color:#eef3db; font-size: small; text-align: center;">Bug</figcaption>
+            </figure>
+            <h6> A software company releases regular updates for its application. Historically, the probability of an update containing a bug is 0.15. The company plans to release 10 updates this year. What is the probability that at least one update will contain a bug?</h6>
+
+            <p>To solve this problem, we can use the complement rule of probability. The complement of the event "at least one update containing a bug" is "no updates containing a bug."</p> 
+              <p>
+              The probability of no updates containing a bug is given by the complement of the probability of an update containing a bug. Therefore, the probability of no updates containing a bug is 1 - 0.15 = 0.85.</p>
+            <p>To find the probability of at least one update containing a bug, we subtract the probability of no updates containing a bug:</p>
+            <h6>P(at least one update containing a bug) = 1 - P(no updates containing a bug)</h6>
+            <h6>1-0.196=0.803 -- Approximately, 80.3% </h6>
+            
+            <p>
+              The idea behind the probability theory is to think systematically and exclude outcomes based on context. In example 5.1, in the Set S, we excluded the probability of having 0 bugs, which was p(0), in order to find at least one bug.
+            </p>   
+              <hr>
+              <div class="section-content text-center">
+            <h3>Analysis</h3>
+            <p>
+              Probability theory is a more in depth understanding when we try to manipulate outcomes to the desired context. Such as finding at least an n number of objects from a group. Probability theory depicts the ways to find these outcomes. 
+              </p>
+              <p>
+              Moreover, it emphasizes on <i><b>Independent Events</b></i>. These are events where the occurrence or outcome of one event does not affect the occurrence or outcome of another event. This concept is crucial in understanding the probability of multiple events happening together.
+              </p>
+              <p>
+              For example, let's consider rolling two fair dice. The outcome of rolling the first die does not affect the outcome of rolling the second die. The probability of getting a specific outcome on the first die, say rolling a 3, is independent of the probability of getting a specific outcome on the second die, say rolling a 5. Probability theory allows us to calculate the probability of both events occurring together by multiplying their individual probabilities.
+            </p>
+            <hr>    
+            <h3 class="mt-5">Reflection</h3>
+            <p>
+              Probability theory is based on conditions and not solely on the sample size of data. It takes into account the underlying assumptions and constraints that govern the events being analyzed. Probability theory enables us to make precise predictions and draw meaningful conclusions by considering the specific conditions and context in which the events occur.
+              </p>
+              <p>
+                By incorporating probability theory into computer science, we can address real-world challenges more effectively. From analyzing network traffic patterns and predicting system failures to optimizing resource allocation and designing secure protocols, probability theory provides a solid foundation for making informed decisions in the face of uncertainty..</p>
+              
+            <hr>
+            <div class="quiz mt-5 d-flex justify-content-center align-items-center">
+              <div class="text-center">
+                  <h4>Quiz</h4>
+                  <p class="text-center">In a bag, there are 5 red balls, 3 green balls, and 2 blue balls. If you randomly select a ball from the bag without looking, what is the probability of drawing a red ball?</p>
+                  <div class="text-center">
+                  <ul class="col-auto" id="quiz1">
+                      <li style="list-style-type: none; margin-left: -15px;"><a href="#" class="option">1/2</a></li>
+                      <li style="list-style-type: none; margin-left: -15px;"><a href="#" class="option">1/4</a></li>
+                      <li style="list-style-type: none; margin-left: -15px;"><a href="#" class="option">1/5</a></li>
+                  </ul>
+                  </div>
+                  <p class="feedback text-center"></p>
+              </div>  
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    // Quiz functionality
+    const options4 = document.querySelectorAll("#info_prob .option");
+    const feedback4 = document.querySelector("#info_prob .feedback");
+  
+    options4.forEach(option => {
+      option.addEventListener("click", function(event) {
+        event.preventDefault();
+        options4.forEach(option => option.classList.remove("selected"));
+        this.classList.add("selected");
+  
+        if (this.textContent === "1/2") {
+          feedback4.textContent = "Correct! E/S -> 5/10 -> 1/2";
+          feedback4.classList.add("correct");
+          feedback4.classList.remove("wrong"); // Remove "wrong" class if previously added
+        } else {
+          feedback4.textContent = "Incorrect. Please try again.";
+          feedback4.classList.add("wrong");
+          feedback4.classList.remove("correct"); // Remove "correct" class if previously added
+        }
+      });
+    });
+  </script>
+      
+  <!-- Bayes Theorem -->
+  <hr class="custom-divider">
+  <section id="info_bayes">
+    <div class="container text">
+      <div class="row justify-content-between">
+        <div class="col-auto">
+          <div class="section-content text-center">
+            <h2 class="mb-4">Bayes Theorem</h2>
+            <hr>
+            <p>
+              A key idea in probability theory and statistics that connects conditional probabilities is the Bayes' theorem. It enables us to revise our opinions or gauge the possibility of an event in light of fresh data or knowledge. The theorem bears the name of Thomas Bayes, a Presbyterian pastor and mathematician who lived in the 18th century.
+            </p>
+            <p>
+              The key concept of Bayes' theorem revolves around the conditional probability of an event A given that event B has occurred. It is mathematically represented as:
+            </p>
+            <h6>P(A|B) = (P(B|A) * P(A)) / P(B)</h6>
+            <h6>WHERE:</h6>
+           
+            <h6>P(A|B): This represents the probability of event A occurring given that event B has already happened.</h6>
+            <h6>P(B|A): This is the probability of event B occurring given that event A has already happened. It is known as the likelihood.</h6>
+            <h6>P(A): This denotes the prior probability of event A occurring, which is our initial belief or knowledge about the probability of A before considering any evidence.</h6>
+            <h6>
+            P(B): This represents the probability of event B occurring, which serves as the normalization factor.</h6><hr>
+            <h5>Example 6.1: Spam Mail!</h5>
+            <figure style="position: relative; text-align: center;">
+              <img src="images/spam.jpg" alt="spam" id="spam" style="display: inline-block;">
+              <figcaption class="text-center" style="color:#eef3db; font-size: small; text-align: center;">Spam Mails</figcaption>
+            </figure>
+            <h6> Suppose you are a software developer working on a new antivirus program. The program is designed to detect and classify emails as either "spam" or "not spam" based on certain features. You have collected the following information about the program's performance:</h6>
+            <h6>The program correctly classifies 95% of spam emails as spam (true positive rate).</h6>
+            <h6> The program incorrectly classifies 3% of non-spam emails as spam (false positive rate).</h6>
+            <h6>30% of the emails received are spam, while the remaining 70% are non-spam.</h6>
+            <h6>Now, given that an email has been classified as spam by the program, what is the probability that it is actually spam?</h6>
+
+            <p>To solve this problem, we can apply Bayes' theorem. Let's define the events as follows:</p> 
+              <p>
+                A: Email is spam.</p>
+                <p>B: Email is classified as spam by the program.</p>
+            <p>We are interested in finding P(A|B), the probability that an email is spam given that it has been classified as spam.</p>
+            <p>P(B|A) = 0.95 (the program correctly classifies 95% of spam emails as spam)
+              </p>
+              <p>P(A) = 0.30 (30% of the emails received are spam)</p>
+              <p>P(B) = P(B|A) * P(A) + P(B|not A) * P(not A)</p>
+              <p>= 0.95 * 0.30 + 0.03 * 0.70 (considering both true positive and false positive rates)</p>
+             
+            <h6>P(A|B) = (0.95 * 0.30) / (0.95 * 0.30 + 0.03 * 0.70)
+              ≈ 0.9048</h6>
+            <h6>Therefore, the probability that an email is actually spam, given that it has been classified as spam by the program, is approximately 0.9048, or 90.48%.</h6>
+              <hr>
+              <div class="section-content text-center">
+            <h3>Analysis</h3>
+            <p>
+              Bayes' theorem is a fundamental concept in probability theory and is often considered a powerful extension of it. While probability theory focuses on calculating the likelihood of events based on known probabilities, Bayes' theorem allows us to update those probabilities based on new evidence or information.</p>
+
+              
+              <p>On the other hand, Bayes' theorem introduces the concept of conditional probability, which takes into account prior knowledge or beliefs about the events before new evidence is observed. It allows us to update our beliefs and make more informed predictions by incorporating new information.</p>
+
+              <p>Bayes' theorem is particularly useful in situations where we have prior knowledge or assumptions and need to revise our beliefs based on observed data. It is widely used in various fields, including statistics, machine learning, data analysis, and decision-making. By integrating prior knowledge with new evidence, Bayes' theorem provides a powerful tool for reasoning under uncertainty and making probabilistic inferences.</p>
+            <hr>    
+            <h3 class="mt-5">Reflection</h3>
+            <p>
+              One key reflection on Bayes' theorem is its relevance in real-life applications, especially in fields like healthcare, finance, and machine learning. In healthcare, Bayes' theorem is used in diagnostic tests, where the probability of having a disease is updated based on the test results and the known prevalence of the disease. In finance, it is employed in risk assessment and portfolio management, where the probability of certain events occurring is updated based on market conditions and historical data. In machine learning, Bayes' theorem is at the core of Bayesian inference, allowing us to make predictions and update our beliefs about model parameters as we gather more data.
+              </p>
+              <p>Moreover, Bayes' theorem promotes a more nuanced understanding of probabilities by considering conditional probabilities. It enables us to evaluate the likelihood of an event given certain conditions, which is often more relevant and realistic in real-life situations. By incorporating conditional probabilities, we can make more precise predictions and assessments.</p>
+              <p>
+                In conclusion, Bayes' theorem has significant real-life applications and offers a valuable framework for reasoning under uncertainty. It allows us to update our beliefs, incorporate prior knowledge, and make informed decisions based on new evidence. By embracing Bayes' theorem, we can navigate uncertain situations more effectively and make probabilistic inferences that are relevant to real-life scenarios.</p>
+              
+            <hr>
+            <div class="quiz mt-5 d-flex justify-content-center align-items-center">
+              <div class="text-center">
+                  <h4>Quiz</h4>
+                  <p class="text-center">In a bag, there are 5 red balls, 3 green balls, and 2 blue balls. If you randomly select a ball from the bag without looking, what is the probability of drawing a red ball?</p>
+                  <div class="text-center">
+                  <ul class="col-auto" id="quiz1">
+                      <li style="list-style-type: none; margin-left: -15px;"><a href="#" class="option">1/2</a></li>
+                      <li style="list-style-type: none; margin-left: -15px;"><a href="#" class="option">1/4</a></li>
+                      <li style="list-style-type: none; margin-left: -15px;"><a href="#" class="option">1/5</a></li>
+                  </ul>
+                  </div>
+                  <p class="feedback text-center"></p>
+              </div>  
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    // Quiz functionality
+    const options5 = document.querySelectorAll("#info_bayes .option");
+    const feedback5 = document.querySelector("#info_bayes .feedback");
+  
+    options5.forEach(option => {
+      option.addEventListener("click", function(event) {
+        event.preventDefault();
+        options5.forEach(option => option.classList.remove("selected"));
+        this.classList.add("selected");
+  
+        if (this.textContent === "1/2") {
+          feedback5.textContent = "Correct! E/S -> 5/10 -> 1/2";
+          feedback5.classList.add("correct");
+          feedback5.classList.remove("wrong"); // Remove "wrong" class if previously added
+        } else {
+          feedback5.textContent = "Incorrect. Please try again.";
+          feedback5.classList.add("wrong");
+          feedback5.classList.remove("correct"); // Remove "correct" class if previously added
+        }
+      });
+    });
+  </script>
       <!-- END OF LONG EXAM 2 -->
+
       <!-- LONG EXAM 3 -->
     <section id="longexam3" class="full-height px-lg-5">
       <div class="container">
@@ -367,291 +886,6 @@
           </div>
       </div>
   </section>
-
-    <!-- About -->
-    <!-- WORK -->
-    <section id="work" class="full-height px-lg-5">
-      <div class="container">
-
-          <div class="row pb-4" data-aos="fade-up">
-              <div class="col-lg-8">
-                  <h6 class="text-brand">WORK</h6>
-                  <h1>My Recent Projects</h1>
-              </div>
-          </div>
-
-          <div class="row gy-4">
-
-              <div class="col-md-6" data-aos="fade-up">
-                  <div class="card-custom rounded-4 bg-base shadow-effect">
-                      <div class="card-custom-image rounded-4">
-                          <img class="rounded-4" src="./assets/images/project-1.jpg" alt="">
-                      </div>
-                      <div class="card-custom-content p-4">
-                          <h4>Startup Landing Page</h4>
-                          <p>Innovation that exceeds expectations. Astra is a true template equiqed with all the elements you could ever need to put together</p>
-                          <a href="#" class="link-custom">Read More</a>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                  <div class="card-custom rounded-4 bg-base shadow-effect">
-                      <div class="card-custom-image rounded-4">
-                          <img class="rounded-4" src="./assets/images/project-2.png" alt="">
-                      </div>
-                      <div class="card-custom-content p-4">
-                          <h4>Startup Landing Page</h4>
-                          <p>Innovation that exceeds expectations. Astra is a true template equiqed with all the elements you could ever need to put together</p>
-                          <a href="#" class="link-custom">Read More</a>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="col-md-6" data-aos="fade-up">
-                  <div class="card-custom rounded-4 bg-base shadow-effect">
-                      <div class="card-custom-image rounded-4">
-                          <img class="rounded-4" src="./assets/images/project-3.png" alt="">
-                      </div>
-                      <div class="card-custom-content p-4">
-                          <h4>Startup Landing Page</h4>
-                          <p>Innovation that exceeds expectations. Astra is a true template equiqed with all the elements you could ever need to put together</p>
-                          <a href="#" class="link-custom">Read More</a>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                  <div class="card-custom rounded-4 bg-base shadow-effect">
-                      <div class="card-custom-image rounded-4">
-                          <img class="rounded-4" src="./assets/images/project-4.png" alt="">
-                      </div>
-                      <div class="card-custom-content p-4">
-                          <h4>Startup Landing Page</h4>
-                          <p>Innovation that exceeds expectations. Astra is a true template equiqed with all the elements you could ever need to put together</p>
-                          <a href="#" class="link-custom">Read More</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-      </div>
-  </section>
-  <section id="about" class="full-height px-lg-5">
-   <div class="container">
-
-       <div class="row pb-4" data-aos="fade-up">
-           <div class="col-lg-8">
-               <h6 class="text-brand">ABOUT</h6>
-               <h1>My Education & Experiance</h1>
-           </div>
-       </div>
-
-       <div class="row gy-5">
-           <div class="col-lg-6">
-
-               <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Education</h3>
-               <div class="row gy-4">
-
-                   <div class="col-12" data-aos="fade-up" data-aos-delay="600">
-                       <div class="bg-base p-4 rounded-4 shadow-effect">
-                           <h4>Master of Software Engineering</h4>
-                           <p class="text-brand mb-2">De Mars University Venston Bay (2015 - 2020)</p>
-                           <p class="mb-0">All we are more and design lorem ipsum dolor creativity sit amet consectetur adipisicing elit</p>
-                       </div>
-                   </div>
-
-                   <div class="col-12" data-aos="fade-up" data-aos-delay="600">
-                       <div class="bg-base p-4 rounded-4 shadow-effect">
-                           <h4>Master of Software Engineering</h4>
-                           <p class="text-brand mb-2">De Mars University Venston Bay (2015 - 2020)</p>
-                           <p class="mb-0">All we are more and design lorem ipsum dolor creativity sit amet consectetur adipisicing elit</p>
-                       </div>
-                   </div>
-
-                   <div class="col-12" data-aos="fade-up" data-aos-delay="600">
-                       <div class="bg-base p-4 rounded-4 shadow-effect">
-                           <h4>Master of Software Engineering</h4>
-                           <p class="text-brand mb-2">De Mars University Venston Bay (2015 - 2020)</p>
-                           <p class="mb-0">All we are more and design lorem ipsum dolor creativity sit amet consectetur adipisicing elit</p>
-                       </div>
-                   </div>
-
-               </div>
-
-           </div>
-
-           <div class="col-lg-6">
-
-               <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Experiance</h3>
-               <div class="row gy-4">
-
-                   <div class="col-12" data-aos="fade-up" data-aos-delay="600">
-                       <div class="bg-base p-4 rounded-4 shadow-effect">
-                           <h4>Applications developer</h4>
-                           <p class="text-brand mb-2">Twitter (2018 - 2020)</p>
-                           <p class="mb-0">All we are more and design lorem ipsum dolor creativity sit amet consectetur adipisicing elit</p>
-                       </div>
-                   </div>
-
-                   <div class="col-12" data-aos="fade-up" data-aos-delay="600">
-                       <div class="bg-base p-4 rounded-4 shadow-effect">
-                           <h4>Applications developer</h4>
-                           <p class="text-brand mb-2">Twitter (2018 - 2020)</p>
-                           <p class="mb-0">All we are more and design lorem ipsum dolor creativity sit amet consectetur adipisicing elit</p>
-                       </div>
-                   </div>
-
-                   <div class="col-12" data-aos="fade-up" data-aos-delay="600">
-                       <div class="bg-base p-4 rounded-4 shadow-effect">
-                           <h4>Applications developer</h4>
-                           <p class="text-brand mb-2">Twitter (2018 - 2020)</p>
-                           <p class="mb-0">All we are more and design lorem ipsum dolor creativity sit amet consectetur adipisicing elit</p>
-                       </div>
-                   </div>
-
-               </div>
-
-           </div>
-
-       </div>
-
-   </div>
-</section>
-<!-- //ABOUT -->
-<!-- REVIEWS -->
-<section id="reviews" class="full-height px-lg-5">
-   <div class="container">
-
-       <div class="row pb-4" data-aos="fade-up">
-           <div class="col-lg-8">
-               <h6 class="text-brand">REVIEWS</h6>
-               <h1>What our subscribers say</h1>
-           </div>
-       </div>
-
-       <div class="row gy-4">
-
-           <div class="col-md-4" data-aos="fade-up">
-
-               <div class="review shadow-effect bg-base p-4 rounded-4">
-                   <div class="text-brand h5">
-                       <i class="las la-star"></i>
-                       <i class="las la-star"></i>
-                       <i class="las la-star"></i>
-                       <i class="las la-star"></i>
-                       <i class="las la-star"></i>
-                   </div>
-                   <p class="my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel quae facilis fugiat molestias ab illum excepturi, qui optio modi asperiores, delectus maiores!</p>
-                   <div class="person">
-                       <h5 class="mb-0">Jon Doe</h5>
-                       <p class="mb-0">Twitter</p>
-                   </div>
-               </div>
-
-           </div>
-
-           <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-
-               <div class="review shadow-effect bg-base p-4 rounded-4">
-                   <div class="text-brand h5">
-                       <i class="las la-star"></i>
-                       <i class="las la-star"></i>
-                       <i class="las la-star"></i>
-                       <i class="las la-star"></i>
-                       <i class="las la-star"></i>
-                   </div>
-                   <p class="my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel quae facilis fugiat molestias ab illum excepturi, qui optio modi asperiores, delectus maiores!</p>
-                   <div class="person">
-                       <h5 class="mb-0">Jon Doe</h5>
-                       <p class="mb-0">Twitter</p>
-                   </div>
-               </div>
-
-           </div>
-
-           <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
-
-               <div class="review shadow-effect bg-base p-4 rounded-4">
-                   <div class="text-brand h5">
-                       <i class="las la-star"></i>
-                       <i class="las la-star"></i>
-                       <i class="las la-star"></i>
-                       <i class="las la-star"></i>
-                       <i class="las la-star"></i>
-                   </div>
-                   <p class="my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel quae facilis fugiat molestias ab illum excepturi, qui optio modi asperiores, delectus maiores!</p>
-                   <div class="person">
-                       <h5 class="mb-0">Jon Doe</h5>
-                       <p class="mb-0">Twitter</p>
-                   </div>
-               </div>
-
-           </div>
-
-       </div>
-
-   </div>
-</section>
-<!-- //REVIEWS -->
-
-<!-- BLOG -->
-<section id="blog" class="full-height px-lg-5">
-   <div class="container">
-
-       <div class="row pb-4" data-aos="fade-up">
-           <div class="col-lg-8">
-               <h6 class="text-brand">BLOG</h6>
-               <h1>My BLog Posts</h1>
-           </div>
-       </div>
-
-       <div class="row gy-4">
-
-           <div class="col-md-4" data-aos="fade-up">
-               <div class="card-custom rounded-4 bg-base shadow-effect">
-                   <div class="card-custom-image rounded-4">
-                       <img class="rounded-4" src="./assets/images/blog-post-1.jpg" alt="">
-                   </div>
-                   <div class="card-custom-content p-4">
-                       <p class="text-brand mb-2">20 Dec, 2022</p>
-                       <h5 class="mb-4">Design a creative landing page using Bootstrap 5</h5>
-                       <a href="#" class="link-custom">Read More</a>
-                   </div>
-               </div>
-           </div>
-
-           <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-               <div class="card-custom rounded-4 bg-base shadow-effect">
-                   <div class="card-custom-image rounded-4">
-                       <img class="rounded-4" src="./assets/images/blog-post-2.jpg" alt="">
-                   </div>
-                   <div class="card-custom-content p-4">
-                       <p class="text-brand mb-2">20 Dec, 2022</p>
-                       <h5 class="mb-4">Design a creative landing page using Bootstrap 5</h5>
-                       <a href="#" class="link-custom">Read More</a>
-                   </div>
-               </div>
-           </div>
-
-           <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
-               <div class="card-custom rounded-4 bg-base shadow-effect">
-                   <div class="card-custom-image rounded-4">
-                       <img class="rounded-4" src="./assets/images/blog-post-3.jpg" alt="">
-                   </div>
-                   <div class="card-custom-content p-4">
-                       <p class="text-brand mb-2">20 Dec, 2022</p>
-                       <h5 class="mb-4">Design a creative landing page using Bootstrap 5</h5>
-                       <a href="#" class="link-custom">Read More</a>
-                   </div>
-               </div>
-           </div>
-
-       </div>
-
-   </div>
-</section>
-<!-- //BLOG -->
 
 <!-- CONTACT -->
 <section id="contact" class="full-height px-lg-5">
@@ -710,6 +944,7 @@
 
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/js/bootstrap.bundle.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
 
   <!-- //WORK -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -727,6 +962,9 @@
     closeNav();
     });
     
+   </script>
+   <script>
+        hljs.highlightAll();
    </script>
 </body>
 </html>

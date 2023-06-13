@@ -8,9 +8,11 @@
    --sidbar-width:240px; 
    --font-base:"Poppins";
 }
-#info_count,#info_pigeon,#info_percom{
+
+
+/* #info_count,#info_pigeon,#info_percom{
    margin-left: 20%;
-}
+} */
 #iphone{
    height:50%;
    width:50%;
