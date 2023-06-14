@@ -59,13 +59,12 @@
                         <h2>I'm <span class="auto-type text-brand"></span></h2>
                         <p style="color:#eef3db;" class="lead mt-2 mb-4 data-aos="fade-up" data-aos-delay="300"">This is my E-Portfolio a requirement in CMSC 57.</p>
                         <a href="#longexam1" class="btn btn-brand me-3">Explore</a>
-                        <a href="#" class="link-custom">(+63)9822927342</a>
+                        <a href="#contact" class="link-custom">Send a message!</a>
                      </div>
                   </div>
                </div>
             </section>
          
-    <!-- CONTENT -->
     <!-- Long Exam 1 TOPICS -->
     <section id="longexam1" class="full-height px-lg-5">
       <div class="container">
@@ -461,6 +460,7 @@ True
     });
   </script>
   <!-- END OF LONG EXAM 1 TOPICS -->
+
   <hr class="custom-divider">
   <!-- LONG EXAM 2 TOPICS -->
     <section id="longexam2" class="full-height px-lg-5">
@@ -489,7 +489,7 @@ True
               <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                   <div class="service p-4 bg-base rounded-4 shadow-effect">
                       <div class="iconbox rounded-4">
-                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-solid fa-empty-set"></i>
                       </div>
                       <h5 class="mt-4 mb-2">Probability Theory</h5>
                       <p style="color:white;">
@@ -501,7 +501,7 @@ True
               <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
                   <div class="service p-4 bg-base rounded-4 shadow-effect">
                       <div class="iconbox rounded-4">
-                        <i class="fa-solid fa-gears"></i>
+                        <i class="fa-solid fa-book-open"></i>
                       </div>
                       <h5 class="mt-4 mb-2">Bayes Theorem</h5>
                       <p style="color:white;">
@@ -629,7 +629,7 @@ The finite probability is 0.3.
 
   <!-- Probability Theory -->
   <hr class="custom-divider">
-  <section id="info_prob">
+  <section id="info_prob" class="py-5 px-lg-5">
     <div class="container text">
       <div class="row justify-content-between">
         <div class="col-auto">
@@ -725,7 +725,7 @@ The finite probability is 0.3.
       
   <!-- Bayes Theorem -->
   <hr class="custom-divider">
-  <section id="info_bayes">
+  <section id="info_bayes" class="py-5 px-lg-5">
     <div class="container text">
       <div class="row justify-content-between">
         <div class="col-auto">
@@ -794,12 +794,12 @@ The finite probability is 0.3.
             <div class="quiz mt-5 d-flex justify-content-center align-items-center">
               <div class="text-center">
                   <h4>Quiz</h4>
-                  <p class="text-center">In a bag, there are 5 red balls, 3 green balls, and 2 blue balls. If you randomly select a ball from the bag without looking, what is the probability of drawing a red ball?</p>
+                  <p class="text-center">Bayes' theorem is particularly useful in situations where?</p>
                   <div class="text-center">
                   <ul class="col-auto" id="quiz1">
-                      <li style="list-style-type: none; margin-left: -15px;"><a href="#" class="option">1/2</a></li>
-                      <li style="list-style-type: none; margin-left: -15px;"><a href="#" class="option">1/4</a></li>
-                      <li style="list-style-type: none; margin-left: -15px;"><a href="#" class="option">1/5</a></li>
+                      <li style="list-style-type: none; margin-left: -15px;"><a href="#" class="option">We have perfect knowledge of all events</a></li>
+                      <li style="list-style-type: none; margin-left: -15px;"><a href="#" class="option">We have incomplete or uncertain information</a></li>
+                      <li style="list-style-type: none; margin-left: -15px;"><a href="#" class="option">Events are mutually exclusive</a></li>
                   </ul>
                   </div>
                   <p class="feedback text-center"></p>
@@ -821,8 +821,8 @@ The finite probability is 0.3.
         options5.forEach(option => option.classList.remove("selected"));
         this.classList.add("selected");
   
-        if (this.textContent === "1/2") {
-          feedback5.textContent = "Correct! E/S -> 5/10 -> 1/2";
+        if (this.textContent === "We have incomplete or uncertain information") {
+          feedback5.textContent = "Correct! Bayes Theorem allows us to find incomplete info!";
           feedback5.classList.add("correct");
           feedback5.classList.remove("wrong"); // Remove "wrong" class if previously added
         } else {
@@ -833,9 +833,10 @@ The finite probability is 0.3.
       });
     });
   </script>
+  <hr class="custom-divider">
       <!-- END OF LONG EXAM 2 -->
 
-      <!-- LONG EXAM 3 -->
+      <!-- LONG EXAM 3 TOPICS-->
     <section id="longexam3" class="full-height px-lg-5">
       <div class="container">
 
@@ -851,51 +852,314 @@ The finite probability is 0.3.
               <div class="col-md-4" data-aos="fade-up">
                   <div class="service p-4 bg-base rounded-4 shadow-effect">
                       <div class="iconbox rounded-4">
-                        <i class="fa-solid fa-calculator"></i>
+                        <i class="fa-solid fa-wifi"></i>
                       </div>
                       <h5 class="mt-4 mb-2">Connectivity</h5>
                       <p style="color:white;">
                         The ability of nodes or components in a system to establish communication or paths between each other.</p>
-                      <a href="#" class="link-custom">Read More</a>
+                      <a href="#info_conn" class="link-custom">Read More</a>
                   </div>
               </div>
 
               <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                   <div class="service p-4 bg-base rounded-4 shadow-effect">
                       <div class="iconbox rounded-4">
-                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-solid fa-book-tanakh"></i>
                       </div>
                       <h5 class="mt-4 mb-2">Euler & Hamilton Paths</h5>
                       <p style="color:white;">
                         Euler paths travel every edge of a graph, while Hamilton paths visit each vertex exactly     once.</p>
-                      <a href="#" class="link-custom">Read More</a>
+                      <a href="#info_eulha" class="link-custom">Read More</a>
                   </div>
               </div>
 
               <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
                   <div class="service p-4 bg-base rounded-4 shadow-effect">
                       <div class="iconbox rounded-4">
-                        <i class="fa-solid fa-gears"></i>
+                        <i class="fa-solid fa-palette"></i>
                       </div>
-                      <h5 class="mt-4 mb-2">Shortest Path Problems</h5>
+                      <h5 class="mt-4 mb-2">Graph Coloring</h5>
                       <p style="color:white;">
-                        Shortest path problems aim to find the most efficient route between two points in a graph.</p>
-                      <a href="#" class="link-custom">Read More</a>
+                        is the assignment of colors to the vertices of a graph such that no two adjacent vertices share the same color.</p>
+                      <a href="#info_color" class="link-custom">Read More</a>
                   </div>
               </div>
           </div>
       </div>
   </section>
 
+  <!-- Connectivity -->
+  <section id="info_conn" class="py-5 px-lg-5">
+    <div class="container text">
+      <div class="row justify-content-between">
+        <div class="col-auto">
+          <div class="section-content text-center">
+            <h2 class="mb-4">Connectivity</h2>
+            <hr>
+            <p>
+              Connectivity determines the ability of nodes or devices to establish communication or travel paths in a network or transportation system. It helps ensure efficient and reliable connectivity between various components. For example, in a computer network, connectivity analysis can determine if all computers can communicate with each other. In transportation, it can identify the best routes for delivering goods or providing services based on the connectivity of roads or transportation links.
+            </p>
+            <h6>Example 7.1: Courier Services</h6>
+            <figure style="position: relative; text-align: center;">
+              <img src="images/delivery.png" alt="Delivery" id="delivery" style="display: inline-block;">
+              <figcaption class="text-center" style="color:#eef3db; font-size: small; text-align: center;">Delivery Network</figcaption>
+            </figure>
+            <h6> Imagine a scenario where Amazon has multiple distribution centers and a network of delivery vehicles. The goal is to efficiently connect these distribution centers with each other and with customer locations.</h6>
+            <p>
+              Connectivity analysis helps determine the most efficient paths for Amazon's delivery vehicles to reach various destinations. By examining the connectivity of roads, traffic conditions, and other transportation factors, Amazon can plan routes that minimize distance, travel time, and fuel consumption. This analysis ensures that packages can be delivered to customers in the shortest possible time, enhancing customer satisfaction.
+              </p>
+ 
+            <h6>Yet, how do we determine connectivity?</h6>
+            <h6>Example 7.2: Two Diamonds</h6>
+            <figure style="position: relative; text-align: center;">
+              <img src="images/graph.png" alt="Graph" id="graph" style="display: inline-block;">
+              <figcaption class="text-center" style="color:#eef3db; font-size: small; text-align: center;">Graph</figcaption>
+            </figure>
+            
+            <p>
+              Above we can see a center vertex connecting two of the diamonds showing connectivity. Yet once we remove this central node, the whole graph becomes disconnected. As such we call this point a <b><i>Articulation Point</i></b>. On the other hand, if the central became a bridge, or an edge, it would be called a <b><i>Cut Edge</i></b>.
+            </p>   
+            <p>Moreover, Connectivity doesn't only merely mean a connection, but it must have a path that can traverse from point a to b and vice versa. We call this a <b><i>Strongly Connected graph</i></b> as opposed to graphs, where an undirected path is between every two vertice we depict this as <b><i>Weakly Connected</i></b> because a->b but not b->a.</p> 
+              <hr>
+              <div class="section-content text-center">
+            <h3>Analysis</h3>
+            <p>
+              Moreover, connectivity analysis helps Amazon identify critical nodes or hubs in their delivery network. These hubs act as central points for consolidating and redistributing packages, ensuring smooth flow and coordination of delivery operations. By optimizing connectivity between distribution centers and hubs, Amazon can streamline their logistics processes and handle a large volume of deliveries effectively.
+              </p>
+              <p>
+              Though simple, connectivity is a fundamental concept to understand. In the creation of Google Maps, Waze, and other navigation software, a good foundation of connectivity is needed. Even in social networks and online communities, studying graph connectivity helps us understand how individuals are connected and influence each other. It allows us to identify clusters or communities within the network, detect influential users or opinion leaders, and analyze the spread of information or trends.
+            </p>
+            <hr>    
+            <h3 class="mt-5">Reflection</h3>
+            <p>
+              As the systems in the world grow increasingly complex, the importance of connectivity becomes even more apparent. In city planning, understanding the connectivity of roads, public transportation, and infrastructure is essential for efficient traffic flow, emergency response, and urban development. Similarly, in logistics and supply chain management, analyzing the connectivity of distribution networks helps optimize routes, reduce costs, and ensure timely delivery of goods and services.
+            </p>
+            <p>
+              Even the COVID-19 pandemic highlighted the importance of connectivity in a different way. With restrictions on physical movement, virtual connectivity became essential for remote work, online education, telemedicine, and staying connected with loved ones. Ensuring reliable internet connectivity and robust network infrastructure became critical to maintain productivity, access essential services, and mitigate the impact of social distancing measures.
+            </p><hr>
+            <div class="quiz mt-5 d-flex justify-content-center align-items-center">
+              <div class="text-center">
+                  <h4>Quiz</h4>
+                  <p class="text-center">Can a cut edge also be a articulation point?</p>
+                  <div class="text-center">
+                  <ul class="col-auto" id="quiz1">
+                      <li style="list-style-type: none; margin-left: -15px;"><a href="#" class="option">Yes</a></li>
+                      <li style="list-style-type: none; margin-left: -15px;"><a href="#" class="option">No</a></li>
+                      <li style="list-style-type: none; margin-left: -15px;"><a href="#" class="option">Depends</a></li>
+                  </ul>
+                  </div>
+                  <p class="feedback text-center"></p>
+              </div>  
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    // Quiz functionality
+    const options6 = document.querySelectorAll("#info_conn .option");
+    const feedback6 = document.querySelector("#info_conn .feedback");
+  
+    options6.forEach(option => {
+      option.addEventListener("click", function(event) {
+        event.preventDefault();
+        options4.forEach(option => option.classList.remove("selected"));
+        this.classList.add("selected");
+  
+        if (this.textContent === "No") {
+          feedback6.textContent = "Correct! They are two different elements";
+          feedback6.classList.add("correct");
+          feedback6.classList.remove("wrong"); // Remove "wrong" class if previously added
+        } else {
+          feedback6.textContent = "Incorrect. Please try again.";
+          feedback6.classList.add("wrong");
+          feedback6.classList.remove("correct"); // Remove "correct" class if previously added
+        }
+      });
+    });
+  </script>
+
+  <!-- Euler and Hamiltonian Paths -->
+  <hr class="custom-divider">
+  <section id="info_eulha" class="py-5 px-lg-5">
+    <div class="container text">
+      <div class="row justify-content-between">
+        <div class="col-auto">
+          <div class="section-content text-center">
+            <h2 class="mb-4">Euler and Hamiltonian Paths</h2>
+            <hr>
+            <p>
+              Once upon a time in Graphland, two friends named Euler and Hamilton stumbled upon a mysterious map. Euler discovered that he could draw a continuous line without lifting his pen, following <i><b>each road exactly once</b></i>, and <i><b>ending where he started</b></i>. This magical line is called an Eulerian cycle. Meanwhile, Hamilton found a path that allowed him to <i><b>visit each location exactly once, without skipping any</b></i>. This remarkable path is known as a Hamiltonian cycle. These concepts, Eulerian and Hamiltonian graphs, became fundamental in graph theory, helping us analyze connectivity and traversal. They have applications in transportation, network design, and more, allowing us to solve complex problems and navigate the pathways of the world around us.
+            </p>
+            <h6>Example 8.1: Euler or Hamlitonian?</h6>
+            <figure style="position: relative; text-align: center;">
+              <img src="images/graph3.png" alt="graph2" id="graph2" style="display: inline-block;">
+              <figcaption class="text-center" style="color:#eef3db; font-size: small; text-align: center;">Euler/Hamiltonian?</figcaption>
+            </figure>
+            <h6> Is there a Euler Circuit?</h6>
+            <p>
+              Yes! We can see a Euler Circuit of {1,2,3,4,5,6,7,8,2,4,6,8,1} traversing all edges exactly once while ending up at its starting point.
+              </p>
+            <h6> Is there a Hamiltonian Circuit?</h6>
+            <p>Yes! There is also a Hamlitonian Circuit by simply going to each vertice in the order {1,2,3,4,5,6,7,8}. Meaning graphs can both have the quality of a Euler and a Hamiltionian one!</p>
+            
+            <p>BUT, we are not only bounded by those two answers, as this graph is undirected, there are many more ways to form a Euler or Hamiltonian Circuit.</p>
+              <hr>
+              <div class="section-content text-center">
+            <h3>Analysis</h3>
+            <p>
+            Knowing these types of graphs is essential as they form part of the foundational knowledge in graph theory. Understanding Eulerian and Hamiltonian graphs allows us to develop and analyze algorithms that are more efficient and effective. For example, in network routing algorithms, knowledge of Eulerian and Hamiltonian paths can help us design algorithms that find the shortest or most optimal paths between nodes. In graph traversal algorithms, such as depth-first search or breadth-first search, understanding these graph types allows us to determine when a path has been fully explored or when a cycle has been formed. By leveraging the properties of Eulerian and Hamiltonian graphs, we can optimize algorithmic solutions, improve performance, and solve complex problems in various fields, including computer science, transportation, logistics, and network optimization.
+            </p>
+            <hr>    
+            <h3 class="mt-5">Reflection</h3>
+            <p>
+              With the knowledge of Connectivity, it can now be supplemented with Euler and Hamiltonian Graphs. This can help give clarity and purpose to our algorithms design or making. Let's say for Shopee, to increase efficiency they must optimize their routes, through this they study Hamiltionian graphs, to determine the routes to take everyday when they deliver parcels. 
+            </p>
+            <p>
+              Additionally, companies such as Grab or Uber utilize these graph concepts to optimize their ride sharing algorithms. By modeling the roads, as edges and places as vertices, with the entirety of it looking like a graph, they can efficiently plan routes to bring customers to their destinations.
+            </p><hr>
+            <div class="quiz mt-5 d-flex justify-content-center align-items-center">
+              <div class="text-center">
+                  <h4>Quiz</h4>
+                  <p class="text-center">Which of the following statements is true regarding Euler and Hamiltonian graphs?</p>
+                  <div class="text-center">
+                  <ul class="col-auto" id="quiz1">
+                      <li style="list-style-type: none; margin-left: -15px;"><a href="#" class="option">All Hamiltonian graphs are also Euler graphs.</a></li>
+                      <li style="list-style-type: none; margin-left: -15px;"><a href="#" class="option"> An Euler graph contains an Euler circuit that visits each edge exactly once.</a></li>
+                      <li style="list-style-type: none; margin-left: -15px;"><a href="#" class="option">A Hamiltonian graph contains a Hamiltonian cycle that visits each vertex exactly once.</a></li>
+                  </ul>
+                  </div>
+                  <p class="feedback text-center"></p>
+              </div>  
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    // Quiz functionality
+    const options7 = document.querySelectorAll("#info_eulha .option");
+    const feedback7 = document.querySelector("#info_eulha .feedback");
+  
+    options7.forEach(option => {
+      option.addEventListener("click", function(event) {
+        event.preventDefault();
+        options7.forEach(option => option.classList.remove("selected"));
+        this.classList.add("selected");
+  
+        if (this.textContent === "A Hamiltonian graph contains a Hamiltonian cycle that visits each vertex exactly once.") {
+          feedback7.textContent = "Correct! Hamiltonian Graphs visit each vertex once";
+          feedback7.classList.add("correct");
+          feedback7.classList.remove("wrong"); // Remove "wrong" class if previously added
+        } else {
+          feedback7.textContent = "Incorrect. Please try again.";
+          feedback7.classList.add("wrong");
+          feedback7.classList.remove("correct"); // Remove "correct" class if previously added
+        }
+      });
+    });
+  </script>
+
+  <!-- Graph Coloring -->
+  <hr class="custom-divider">
+  <section id="info_color" class="py-5 px-lg-5">
+    <div class="container text">
+      <div class="row justify-content-between">
+        <div class="col-auto">
+          <div class="section-content text-center">
+            <h2 class="mb-4">Graph Coloring</h2>
+            <hr>
+            <p>
+              Like its name suggests, the purpose of graph coloring is to assign colors to the vertices of a graph such that no two adjacent vertices have the same color. This coloring allows for better visualization and understanding of the relationships and connections within the graph. By assigning colors, we can easily identify and distinguish different components or clusters within the graph, making it easier to analyze and interpret the underlying data or relationships. 
+            </p>
+            <p>The number of colors to be used in the graph is called the <i><b>Chromatic Number</b></i> denoting it as <i><b>k-chromatic or k-colorable.</b></i></p>
+            <h6>Example 9.1: Petersen Graph</h6>
+            <figure style="position: relative; text-align: center;">
+              <img src="images/petersen1.png" alt="Uncolored Petersen Graph" id="Petersen" style="display: inline-block;">
+              <figcaption class="text-center" style="color:#eef3db; font-size: small; text-align: center;">Petersen Graph</figcaption>
+            </figure>
+            <h6> What is the chromatic number of this petersen graph?</h6>
+            <p>
+              Initially, a person may be tempted to just count the sum of the vertices and declare that as the chromatic number. However, that is a flawed way of thinking as it is not efficient. Hence, there is a rule called the <i><b>Four color theorem</b></i> that states the chromatic number of a planar graph must not be greater than 4.
+            </p>
+            <p>So, we have to think intuitively</p>
+            <p>We know that no adjacent vertices in a graph should have the same color. This leads us to the concept of the chromatic number, which represents the minimum number of colors needed to color a graph such that no adjacent vertices have the same color. In the case of the Petersen graph, we can analyze its structure and connectivity to determine its chromatic number. By examining the graph and finding the largest cliques (complete subgraphs) within it, we can infer that the chromatic number of the Petersen graph is at least 3. This means that we need at least 3 colors to properly color the graph without violating the condition of no adjacent vertices having the same color.</p>
+            <h6>Example 9.2: Colored Petersen Graph</h6>
+            <figure style="position: relative; text-align: center;">
+              <img src="images/petersencolor.png" alt="colored Petersen Graph" id="cpetersen" style="display: inline-block;">
+              <figcaption class="text-center" style="color:#eef3db; font-size: small; text-align: center;">Colored Petersen Graph</figcaption>
+            </figure>
+            
+              <hr>
+              <div class="section-content text-center">
+            <h3>Analysis</h3>
+            <p>
+            In essence, graph coloring gives a visual image on how we can segregate each adjacent vertex with different colors. In reality, we use graph coloring in scheduling, such as for a keynote speech with different speaker, we usually color code their time's, to avoid conflict and have a clearer outcome.
+            </p>
+            <hr>    
+            <h3 class="mt-5">Reflection</h3>
+            <p>
+              We may use graph coloring to represent and address practical issues including task assignment, resource allocation, event scheduling, and network architecture. It offers a methodical way to handle restrictions and dependencies, ensuring that particular requirements are met and conflicts are avoided. In disciplines including computer science, operations research, network architecture, and project management, graph coloring is a vital tool for understanding and analyzing complicated systems.
+            </p>
+            <p>
+              Just like highlighting notes during our highschool days, coloring parts of our notes promotes organization, and seperation. Which in turn, provides a clearer understanding of the whole note. 
+            </p><hr>
+            <div class="quiz mt-5 d-flex justify-content-center align-items-center">
+              <div class="text-center">
+                  <h4>Quiz</h4>
+                  <p class="text-center">Four Color theorem of a planar graph must not be more than?</p>
+                  <div class="text-center">
+                  <ul class="col-auto" id="quiz1">
+                      <li style="list-style-type: none; margin-left: -15px;"><a href="#" class="option">3</a></li>
+                      <li style="list-style-type: none; margin-left: -15px;"><a href="#" class="option">4</a></li>
+                      <li style="list-style-type: none; margin-left: -15px;"><a href="#" class="option">5</a></li>
+                  </ul>
+                  </div>
+                  <p class="feedback text-center"></p>
+              </div>  
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    // Quiz functionality
+    const options8 = document.querySelectorAll("#info_color .option");
+    const feedback8 = document.querySelector("#info_color .feedback");
+  
+    options8.forEach(option => {
+      option.addEventListener("click", function(event) {
+        event.preventDefault();
+        options8.forEach(option => option.classList.remove("selected"));
+        this.classList.add("selected");
+  
+        if (this.textContent === "4") {
+          feedback8.textContent = "Correct!";
+          feedback8.classList.add("correct");
+          feedback8.classList.remove("wrong"); // Remove "wrong" class if previously added
+        } else {
+          feedback8.textContent = "Incorrect. Please try again.";
+          feedback8.classList.add("wrong");
+          feedbac8.classList.remove("correct"); // Remove "correct" class if previously added
+        }
+      });
+    });
+  </script>
+  
 <!-- CONTACT -->
+<hr class="custom-divider">
 <section id="contact" class="full-height px-lg-5">
    <div class="container">
 
        <div class="row justify-content-center text-center">
            <div class="col-lg-8 pb-4" data-aos="fade-up">
-               <h6 class="text-brand">CONTACT</h6>
-               <h1>Like what you see? Let's talk.
-               </h1>
+               <h4 class="text-brand">Thoughts</h4>
+               <h3>Like what you see? Type a response!
+               </h3>
+               <p class="text-center">Disclaimer: Once you send a message you can never get it back.</p>
            </div>
 
            <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
@@ -913,43 +1177,71 @@ The finite probability is 0.3.
                        <textarea name="" rows="4" class="form-control" placeholder="Enter your message"></textarea>
                    </div>
                    <div class="form-group col-12 d-grid">
-                       <button type="submit" class="btn btn-brand">Contact me</button>
+                       <button type="submit" class="btn btn-brand">Kaboom</button>
                    </div>
                </form>
            </div>
        </div>
+    </div>
+  </section>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+  var form = document.querySelector('form');
+  var submitButton = document.querySelector('button[type="submit"]');
 
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    submitButton.disabled = true;
+    submitButton.textContent = 'Submitting...';
 
-   </div>
-</section>
-<!-- //CONTACT -->
+    // Check if any input field is empty
+    var inputs = form.querySelectorAll('input');
+    var emptyField = Array.from(inputs).some(function(input) {
+      return input.value.trim() === '';
+    });
 
-<!-- FOOTER -->
-<footer class="py-5 px-lg-5">
-   <div class="container">
-       <div class="row gy-4 justify-content-between">
-           <div class="col-auto">
-               <p class="mb-0"><b>Designed by</b> <a href="#" class="fw-bold">Aaron Dave A. Siapuatco</a></p>
-           </div>
-           <div class="col-auto links">
-            <a href="https://www.linkedin.com/in/aarondavesiapuatco/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/ewandeyb"><i class="fab fa-github"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=100052887422731"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/adasiapuatco/"><i class="fab fa-instagram"></i></a>
-         </div>
-       </div>
-   </div>
-</footer>
-<!-- //FOOTER -->
-
+    // If any input field is empty, display error message
+    if (emptyField) {
+      submitButton.textContent = 'Type Something First!';
+      submitButton.style.backgroundColor = 'red';
+      submitButton.disabled = false;
+    } else {
+      // Simulate form submission delay (replace this with actual form submission logic)
+      setTimeout(function() {
+        submitButton.textContent = 'Thank you for your response';
+        submitButton.style.backgroundColor = 'green';
+      }, 2000);
+    }
+  });
+});
+    </script>
+    <!-- SocMeds -->
+    <footer class="py-5 px-lg-5">
+    <div class="container">
+        <div class="row gy-4 justify-content-between">
+            <div class="col-auto">
+                <p class="mb-0"><b>Designed by</b> <a href="#" class="fw-bold">Aaron Dave A. Siapuatco</a></p>
+            </div>
+            <div class="col-auto links">
+              <a href="https://www.linkedin.com/in/aarondavesiapuatco/"><i class="fab fa-linkedin"></i></a>
+              <a href="https://github.com/ewandeyb"><i class="fab fa-github"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=100052887422731"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.instagram.com/adasiapuatco/"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+    </div>
+  </footer>
 </div>
+<!-- CDNS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/js/bootstrap.bundle.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
 
-  <!-- //WORK -->
+  
    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.jshttps://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+   <!-- Typed Js Animation -->
    <script>
     var typed= new Typed(".auto-type", {
         strings: ["Coding.", "Sleeping.", "Eating."],
